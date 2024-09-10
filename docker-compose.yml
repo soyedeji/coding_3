@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  vite-app:
+    container_name: oyedeji_samuel_coding_assignment11
+    build:
+      context: .  # The current directory where the Dockerfile is located
+      dockerfile: Dockerfile
+    ports:
+      - '7775:7775'  # Map port 7775 on the host to 5173 inside the container
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - .:/app  # Bind mount for live reloading
