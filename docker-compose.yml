@@ -7,7 +7,8 @@ services:
       context: .  # The current directory where the Dockerfile is located
       dockerfile: Dockerfile
     ports:
-      - '7775:7775'  # Map port 7775 on the host to 5173 inside the container
+      - '7775:7775'  # Vite development server
+      - '8083:8083'  # Storybook development server
     environment:
       - NODE_ENV=development
     volumes:
