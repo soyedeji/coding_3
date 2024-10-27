@@ -51,6 +51,7 @@
     "prettier": "^3.3.3",
     "storybook": "^8.3.5",
     "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
     "vite": "^5.4.1"
   },
   "eslintConfig": {
