@@ -1,6 +1,6 @@
 // src/components/Card/Card.tsx
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 export type CardProps = {
   imageSrc: string;
@@ -52,7 +52,13 @@ const CardButton = styled.button`
   }
 `;
 
-const Card: React.FC<CardProps> = ({ imageSrc, title, description, buttonText, onButtonClick }) => {
+const Card: React.FC<CardProps> = ({
+  imageSrc,
+  title,
+  description,
+  buttonText,
+  onButtonClick,
+}) => {
   return (
     <CardContainer>
       <CardImage src={imageSrc} alt={title} />
@@ -60,9 +66,7 @@ const Card: React.FC<CardProps> = ({ imageSrc, title, description, buttonText, o
         <CardTitle>{title}</CardTitle>
         <CardDescription>{description}</CardDescription>
         {buttonText && (
-          <CardButton onClick={onButtonClick}>
-            {buttonText}
-          </CardButton>
+          <CardButton onClick={onButtonClick}>{buttonText}</CardButton>
         )}
       </CardContent>
     </CardContainer>

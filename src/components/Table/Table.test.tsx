@@ -1,13 +1,13 @@
 // src/components/Table/Table.test.tsx
-import { render, screen } from '@testing-library/react';
-import Table from './Table';
-import TableHeader from './TableHeader';
-import TableRow from './TableRow';
-import TableCell from './TableCell';
-import TableFooter from './TableFooter';
+import { render, screen } from "@testing-library/react";
+import Table from "./Table";
+import TableHeader from "./TableHeader";
+import TableRow from "./TableRow";
+import TableCell from "./TableCell";
+import TableFooter from "./TableFooter";
 
-describe('Table Component', () => {
-  test('renders table with header, rows, and footer', () => {
+describe("Table Component", () => {
+  test("renders table with header, rows, and footer", () => {
     render(
       <Table borderColor="black">
         <TableHeader>
@@ -36,7 +36,7 @@ describe('Table Component', () => {
             <TableCell>Footer 3</TableCell>
           </TableRow>
         </TableFooter>
-      </Table>
+      </Table>,
     );
 
     const headerElement = screen.getByText(/header 1/i);

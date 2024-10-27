@@ -1,6 +1,6 @@
 // src/components/Img/Img.tsx
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 export type ImgProps = {
   src: string;
@@ -11,8 +11,8 @@ export type ImgProps = {
 
 const StyledImg = styled.img<ImgProps>`
   max-width: 100%;
-  width: ${({ width }) => width || 'auto'};
-  height: ${({ height }) => height || 'auto'};
+  width: ${({ width }) => width || "auto"};
+  height: ${({ height }) => height || "auto"};
 `;
 
 const Img: React.FC<ImgProps> = ({ src, alt, width, height }) => {

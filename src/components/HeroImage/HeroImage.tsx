@@ -1,6 +1,6 @@
 // src/components/HeroImage/HeroImage.tsx
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 export type HeroImageProps = {
   imageSrc: string;
@@ -13,7 +13,7 @@ export type HeroImageProps = {
 const HeroContainer = styled.div<HeroImageProps>`
   position: relative;
   width: 100%;
-  height: ${({ height }) => height || '400px'};
+  height: ${({ height }) => height || "400px"};
   background-image: url(${({ imageSrc }) => imageSrc});
   background-size: cover;
   background-position: center;
@@ -36,18 +36,24 @@ const Overlay = styled.div`
 `;
 
 const Heading = styled.h1<HeroImageProps>`
-  color: ${({ textColor }) => textColor || 'white'};
+  color: ${({ textColor }) => textColor || "white"};
   margin: 0;
   font-size: 3em;
 `;
 
 const Description = styled.p<HeroImageProps>`
-  color: ${({ textColor }) => textColor || 'white'};
+  color: ${({ textColor }) => textColor || "white"};
   margin: 0;
   font-size: 1.5em;
 `;
 
-const HeroImage: React.FC<HeroImageProps> = ({ imageSrc, heading, description, height, textColor }) => {
+const HeroImage: React.FC<HeroImageProps> = ({
+  imageSrc,
+  heading,
+  description,
+  height,
+  textColor,
+}) => {
   return (
     <HeroContainer imageSrc={imageSrc} height={height}>
       <Overlay>

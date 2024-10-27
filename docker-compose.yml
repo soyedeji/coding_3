@@ -1,15 +1,15 @@
-version: '3.8'
+version: "3.8"
 
 services:
   vite-app:
     container_name: oyedeji_samuel_coding_assignment11
     build:
-      context: .  # The current directory where the Dockerfile is located
+      context: . # The current directory where the Dockerfile is located
       dockerfile: Dockerfile
     ports:
-      - '7775:7775'  # Vite development server
-      - '8083:8083'  # Storybook development server
+      - "7775:7775" # Vite development server
+      - "8083:8083" # Storybook development server
     environment:
       - NODE_ENV=development
     volumes:
-      - .:/app  # Bind mount for live reloading
+      - .:/app # Bind mount for live reloading

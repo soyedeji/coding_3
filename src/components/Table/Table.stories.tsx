@@ -1,14 +1,14 @@
 // src/components/Table/Table.stories.tsx
-import React from 'react';
-import { Meta, StoryFn } from '@storybook/react';
-import Table from './Table';
-import TableHeader from './TableHeader';
-import TableRow from './TableRow';
-import TableCell from './TableCell';
-import TableFooter from './TableFooter';
+import React from "react";
+import { Meta, StoryFn } from "@storybook/react";
+import Table from "./Table";
+import TableHeader from "./TableHeader";
+import TableRow from "./TableRow";
+import TableCell from "./TableCell";
+import TableFooter from "./TableFooter";
 
 export default {
-  title: 'Components/Table',
+  title: "Components/Table",
   component: Table,
 } as Meta;
 
@@ -45,5 +45,5 @@ const Template: StoryFn = (args) => (
 
 export const Default = Template.bind({});
 Default.args = {
-  borderColor: 'black',
+  borderColor: "black",
 };

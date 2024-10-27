@@ -1,6 +1,6 @@
 // src/components/Table/TableFooter.tsx
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 export type TableFooterProps = {
   children: React.ReactNode;

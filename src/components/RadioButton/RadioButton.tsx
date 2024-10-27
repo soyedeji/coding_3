@@ -1,6 +1,6 @@
 // src/components/RadioButton/RadioButton.tsx
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 export type RadioButtonProps = {
   label: string;
@@ -18,7 +18,13 @@ const StyledLabel = styled.label`
   font-size: 16px;
 `;
 
-const RadioButton: React.FC<RadioButtonProps> = ({ label, name, value, checked = false, onChange }) => {
+const RadioButton: React.FC<RadioButtonProps> = ({
+  label,
+  name,
+  value,
+  checked = false,
+  onChange,
+}) => {
   const handleChange = () => {
     if (onChange) {
       onChange(value);

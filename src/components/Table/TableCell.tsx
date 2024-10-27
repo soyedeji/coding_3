@@ -1,6 +1,6 @@
 // src/components/Table/TableCell.tsx
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 export type TableCellProps = {
   children: React.ReactNode;
