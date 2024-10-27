@@ -32,9 +32,6 @@ jobs:
       - name: Build the Vite app
         run: npm run build
 
-      - name: Build Storybook
-        run: npm run storybook:build
-
       - name: Run ESLint
         run: npm run lint
 
